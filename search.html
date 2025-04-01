@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .search-header {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+        }
+        .search-card:hover .play-icon {
+            opacity: 1;
+        }
+        .filter-btn.active {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Header -->
+    <header class="search-header fixed w-full z-10">
+        <div class="flex items-center px-12 py-6">
+            <a href="index.html" class="mr-8">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" 
+                     alt="Netflix Logo" class="h-12">
+            </a>
+            <div class="relative w-full max-w-2xl">
+                <input type="text" placeholder="Titles, people, genres" 
+                       class="w-full bg-gray-800 bg-opacity-70 border border-gray-600 rounded px-4 py-3 pl-12 focus:outline-none focus:border-white">
+                <i class="fas fa-search absolute left-4 top-4 text-gray-400"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Results -->
+    <section class="pt-32 px-12">
+        <!-- Filters -->
+        <div class="flex space-x-4 mb-8 overflow-x-auto pb-4">
+            <button class="filter-btn active px-4 py-2 rounded-full border border-gray-600 whitespace-nowrap">
+                All
+            </button>
+            <button class="filter-btn px-4 py-2 rounded-full border border-gray-600 whitespace-nowrap">
+                Movies
+            </button>
+            <button class="filter-btn px-4 py-2 rounded-full border border-gray-600 whitespace-nowrap">
+                TV Shows
+            </button>
+            <button class="filter-btn px-4 py-2 rounded-full border border-gray-600 whitespace-nowrap">
+                Action
+            </button>
+            <button class="filter-btn px-4 py-2 rounded-full border border-gray-600 whitespace-nowrap">
+                Comedy
+            </button>
+            <button class="filter-btn px-4 py-2 rounded-full border border-gray-600 whitespace-nowrap">
+                Horror
+            </button>
+        </div>
+
+        <!-- Results Grid -->
+        <div>
+            <h2 class="text-2xl font-bold mb-6">Popular Searches</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <!-- Result 1 -->
+                <div class="search-card relative">
+                    <img src="https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg" 
+                         alt="Movie 1" class="rounded w-full">
+                    <div class="play-icon absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300">
+                        <div class="bg-black bg-opacity-60 rounded-full p-3">
+                            <i class="fas fa-play text-2xl"></i>
+                        </div>
+                    </div>
+                    <p class="mt-2">The Dark Knight</p>
+                </div>
+                
+                <!-- Result 2 -->
+                <div class="search-card relative">
+                    <img src="https://images.pexels.com/photos/3062545/pexels-photo-3062545.jpeg" 
+                         alt="Movie 2" class="rounded w-full">
+                    <div class="play-icon absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300">
+                        <div class="bg-black bg-opacity-60 rounded-full p-3">
+                            <i class="fas fa-play text-2xl"></i>
+                        </div>
+                    </div>
+                    <p class="mt-2">Inception</p>
+                </div>
+                
+                <!-- Result 3 -->
+                <div class="search-card relative">
+                    <img src="https://images.pexels.com/photos/3945317/pexels-photo-3945317.jpeg" 
+                         alt="Movie 3" class="rounded w-full">
+                    <div class="play-icon absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300">
+                        <div class="bg-black bg-opacity-60 rounded-full p-3">
+                            <i class="fas fa-play text-2xl"></i>
+                        </div>
+                    </div>
+                    <p class="mt-2">Stranger Things</p>
+                </div>
+                
+                <!-- Result 4 -->
+                <div class="search-card relative">
+                    <img src="https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg" 
+                         alt="Movie 4" class="rounded w-full">
+                    <div class="play-icon absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300">
+                        <div class="bg-black bg-opacity-60 rounded-full p-3">
+                            <i class="fas fa-play text-2xl"></i>
+                        </div>
+                    </div>
+                    <p class="mt-2">The Queen's Gambit</p>
+                </div>
+                
+                <!-- Result 5 -->
+                <div class="search-card relative">
+                    <img src="https://images.pexels.com/photos/7238759/pexels-photo-7238759.jpeg" 
+                         alt="Movie 5" class="rounded w-full">
+                    <div class="play-icon absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300">
+                        <div class="bg-black bg-opacity-60 rounded-full p-3">
+                            <i class="fas fa-play text-2xl"></i>
+                        </div>
+                    </div>
+                    <p class="mt-2">Money Heist</p>
+                </div>
+                
+                <!-- Result 6 -->
+                <div class="search-card relative">
+                    <img src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg" 
+                         alt="Movie 6" class="rounded w-full">
+                    <div class="play-icon absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300">
+                        <div class="bg-black bg-opacity-60 rounded-full p-3">
+                            <i class="fas fa-play text-2xl"></i>
+                        </div>
+                    </div>
+                    <p class="mt-2">Breaking Bad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-12 bg-black text-gray-400 mt-12">
+        <div class="max-w-6xl mx-auto">
+            <p class="mb-8">Questions? Call 1-800-NETFLIX</p>
+            <div class="grid grid-cols-4 gap-4 mb-8">
+                <a href="#" class="hover:underline">FAQ</a>
+                <a href="#" class="hover:underline">Help Center</a>
+                <a href="#" class="hover:underline">Terms of Use</a>
+                <a href="#" class="hover:underline">Privacy</a>
+            </div>
+            <p>© 2023 Netflix Clone</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
