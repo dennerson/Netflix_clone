@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone - Movie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .movie-hero {
+            background-image: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%), 
+                              url('https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        .play-btn:hover {
+            background-color: rgba(255,255,255,0.9);
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Header -->
+    <header class="absolute w-full z-10">
+        <div class="flex justify-between items-center px-12 py-6">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" 
+                 alt="Netflix Logo" class="h-12">
+            <div class="flex space-x-4">
+                <a href="index.html" class="hover:text-gray-300">Home</a>
+                <a href="search.html" class="hover:text-gray-300">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Movie Hero Section -->
+    <section class="movie-hero h-screen flex items-end pb-16">
+        <div class="px-12 max-w-3xl">
+            <h1 class="text-5xl font-bold mb-4">The Dark Knight</h1>
+            <div class="flex space-x-4 mb-6">
+                <span class="text-green-500 font-bold">98% Match</span>
+                <span>2008</span>
+                <span>2h 32m</span>
+                <span class="border border-gray-400 px-1">HD</span>
+            </div>
+            <p class="text-lg mb-8">
+                When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, 
+                Batman must accept one of the greatest psychological and physical tests of his ability 
+                to fight injustice.
+            </p>
+            <div class="flex space-x-4">
+                <button class="bg-white text-black px-6 py-2 rounded font-bold play-btn">
+                    <i class="fas fa-play mr-2"></i> Play
+                </button>
+                <button class="bg-gray-600 bg-opacity-70 px-6 py-2 rounded font-bold">
+                    <i class="fas fa-plus mr-2"></i> My List
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movie Details -->
+    <section class="py-12 px-12">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">About The Dark Knight</h2>
+            <div class="grid grid-cols-3 gap-4 mb-6">
+                <div>
+                    <p class="text-gray-400">Cast:</p>
+                    <p>Christian Bale, Heath Ledger, Aaron Eckhart</p>
+                </div>
+                <div>
+                    <p class="text-gray-400">Genres:</p>
+                    <p>Action, Crime, Drama</p>
+                </div>
+                <div>
+                    <p class="text-gray-400">Maturity Rating:</p>
+                    <p>PG-13</p>
+                </div>
+            </div>
+            <p>
+                Director Christopher Nolan's gritty, groundbreaking take on the Batman mythos continues 
+                with this follow-up to Batman Begins. With the help of Lieutenant Jim Gordon and District 
+                Attorney Harvey Dent, Batman has been making headway against local crime...until a rising 
+                criminal mastermind known as The Joker unleashes fresh chaos on Gotham City.
+            </p>
+        </div>
+
+        <!-- More Like This -->
+        <div>
+            <h2 class="text-2xl font-bold mb-6">More Like This</h2>
+            <div class="grid grid-cols-4 gap-4">
+                <div class="card transition duration-300">
+                    <img src="https://images.pexels.com/photos/3062545/pexels-photo-3062545.jpeg" 
+                         alt="Movie 1" class="rounded w-full">
+                </div>
+                <div class="card transition duration-300">
+                    <img src="https://images.pexels.com/photos/3945317/pexels-photo-3945317.jpeg" 
+                         alt="Movie 2" class="rounded w-full">
+                </div>
+                <div class="card transition duration-300">
+                    <img src="https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg" 
+                         alt="Movie 3" class="rounded w-full">
+                </div>
+                <div class="card transition duration-300">
+                    <img src="https://images.pexels.com/photos/7238759/pexels-photo-7238759.jpeg" 
+                         alt="Movie 4" class="rounded w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-12 bg-black text-gray-400">
+        <div class="max-w-6xl mx-auto">
+            <p class="mb-8">Questions? Call 1-800-NETFLIX</p>
+            <div class="grid grid-cols-4 gap-4 mb-8">
+                <a href="#" class="hover:underline">FAQ</a>
+                <a href="#" class="hover:underline">Help Center</a>
+                <a href="#" class="hover:underline">Terms of Use</a>
+                <a href="#" class="hover:underline">Privacy</a>
+            </div>
+            <p>© 2023 Netflix Clone</p>
+        </div>
+    </footer>
+</body>
+</html>
