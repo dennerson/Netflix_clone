@@ -1,2 +1,2 @@
-# blackboxai-1743472161504
-Built by https://www.blackbox.ai
+# Clone the Netflix App
+just a  liesure project
