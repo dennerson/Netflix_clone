@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), 
+                              url('https://images.pexels.com/photos/3945317/pexels-photo-3945317.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        .card:hover {
+            transform: scale(1.1);
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Header -->
+    <header class="absolute w-full z-10">
+        <div class="flex justify-between items-center px-12 py-6">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" 
+                 alt="Netflix Logo" class="h-12">
+            <div class="flex space-x-4">
+                <button class="bg-red-600 hover:bg-red-700 px-4 py-1 rounded">
+                    Sign In
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-screen flex items-center">
+        <div class="px-12 max-w-3xl">
+            <h1 class="text-5xl font-bold mb-4">Unlimited movies, TV shows, and more.</h1>
+            <p class="text-2xl mb-6">Watch anywhere. Cancel anytime.</p>
+            <div class="flex space-x-2">
+                <input type="email" placeholder="Email address" 
+                       class="bg-black bg-opacity-50 border border-gray-600 px-4 py-3 w-96 rounded">
+                <button class="bg-red-600 hover:bg-red-700 px-6 py-3 rounded text-xl">
+                    Get Started <i class="fas fa-chevron-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Content -->
+    <section class="py-16 px-12">
+        <h2 class="text-3xl font-bold mb-8">Popular on Netflix</h2>
+        <div class="grid grid-cols-4 gap-4">
+            <!-- Movie Card 1 -->
+            <div class="card transition duration-300">
+                <img src="https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg" 
+                     alt="Movie 1" class="rounded w-full">
+            </div>
+            <!-- Movie Card 2 -->
+            <div class="card transition duration-300">
+                <img src="https://images.pexels.com/photos/3062545/pexels-photo-3062545.jpeg" 
+                     alt="Movie 2" class="rounded w-full">
+            </div>
+            <!-- Movie Card 3 -->
+            <div class="card transition duration-300">
+                <img src="https://images.pexels.com/photos/3945317/pexels-photo-3945317.jpeg" 
+                     alt="Movie 3" class="rounded w-full">
+            </div>
+            <!-- Movie Card 4 -->
+            <div class="card transition duration-300">
+                <img src="https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg" 
+                     alt="Movie 4" class="rounded w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="py-16 px-12 bg-gray-900">
+        <h2 class="text-3xl font-bold mb-8">Browse by Category</h2>
+        <div class="grid grid-cols-6 gap-4">
+            <div class="text-center">
+                <i class="fas fa-explosion text-4xl mb-2 text-red-600"></i>
+                <p>Action</p>
+            </div>
+            <div class="text-center">
+                <i class="fas fa-laugh-squint text-4xl mb-2 text-red-600"></i>
+                <p>Comedy</p>
+            </div>
+            <div class="text-center">
+                <i class="fas fa-ghost text-4xl mb-2 text-red-600"></i>
+                <p>Horror</p>
+            </div>
+            <div class="text-center">
+                <i class="fas fa-heart text-4xl mb-2 text-red-600"></i>
+                <p>Romance</p>
+            </div>
+            <div class="text-center">
+                <i class="fas fa-robot text-4xl mb-2 text-red-600"></i>
+                <p>Sci-Fi</p>
+            </div>
+            <div class="text-center">
+                <i class="fas fa-question text-4xl mb-2 text-red-600"></i>
+                <p>Mystery</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-12 bg-black text-gray-400">
+        <div class="max-w-6xl mx-auto">
+            <p class="mb-8">Questions? Call 1-800-NETFLIX</p>
+            <div class="grid grid-cols-4 gap-4 mb-8">
+                <a href="#" class="hover:underline">FAQ</a>
+                <a href="#" class="hover:underline">Help Center</a>
+                <a href="#" class="hover:underline">Terms of Use</a>
+                <a href="#" class="hover:underline">Privacy</a>
+                <a href="#" class="hover:underline">Cookie Preferences</a>
+                <a href="#" class="hover:underline">Corporate Information</a>
+            </div>
+            <div class="flex space-x-4 mb-8">
+                <i class="fab fa-facebook text-2xl"></i>
+                <i class="fab fa-instagram text-2xl"></i>
+                <i class="fab fa-twitter text-2xl"></i>
+                <i class="fab fa-youtube text-2xl"></i>
+            </div>
+            <p>© 2023 Netflix Clone</p>
+        </div>
+    </footer>
+</body>
+</html>
